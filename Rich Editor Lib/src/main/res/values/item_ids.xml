@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bold" type="id" />
+    <item name="italic" type="id" />
+    <item name="underline" type="id" />
+    <item name="strike_through" type="id" />
+    <item name="size" type="id" />
+    <item name="font_color" type="id" />
+
+
+</resources>

@@ -1,0 +1,4 @@
+include ':Rich Editor Lib'
+include ':app'
+include ':library'
+rootProject.name = "Rich Editor"
