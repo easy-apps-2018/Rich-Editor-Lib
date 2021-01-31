@@ -6,10 +6,12 @@ import android.graphics.Typeface
 import android.text.Editable
 import android.text.TextWatcher
 import android.text.style.CharacterStyle
+import android.text.style.ForegroundColorSpan
 import android.text.style.StrikethroughSpan
 import android.text.style.StyleSpan
 import android.text.util.Linkify
 import android.util.AttributeSet
+import android.util.Log
 import android.util.TypedValue
 import android.view.Gravity
 import android.view.inputmethod.EditorInfo
@@ -134,7 +136,7 @@ class RichEditText : AppCompatEditText {
                 styleSpan.size.toFloat(),
                 "SpanFontSize"
             )
-            is SpanForegroundColor -> {
+            is ForegroundColorSpan -> {
                 foreColor = styleSpan.foregroundColor
                 foregroundColorListener?.onColorChanged(foreColor, "SpanForegroundColor")
             }
