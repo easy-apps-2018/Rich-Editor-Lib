@@ -17,15 +17,15 @@ Currently, it does not include all features introduced in the [original](https:/
 First add this in to root `build.gradle` at the end of repositories :
 ```groovy
 allprojects {
-	repositories {
-		...
-		maven { url 'https://jitpack.io' }
-	}
+   repositories {
+ 	...
+	maven { url 'https://jitpack.io' }
+   }
 }
 ```
 Then add this dependency in your apps `build.gradle`:
 ```groovy
-implementation 'com.github.easy-apps-2018:rich-editor-lib:0.0.1'
+implementation 'com.github.easy-apps-2018:rich-editor-lib:0.1.0'
 ```
 ## Usage
 In `XML`: `activity_main.xml`
