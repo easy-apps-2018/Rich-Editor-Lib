@@ -1,12 +1,12 @@
 package com.easyapps.richeditorlib.styles
 
-import android.content.res.ColorStateList
 import android.graphics.Color
 import android.text.Editable
-import com.easyapps.richeditorlib.widgets.RichEditText
 import com.easyapps.richeditorlib.abstracts.DynamicStyle
+import com.easyapps.richeditorlib.helpers.Helper
 import com.easyapps.richeditorlib.interfaces.ForegroundColorListener
 import com.easyapps.richeditorlib.spans.SpanForegroundColor
+import com.easyapps.richeditorlib.widgets.RichEditText
 import com.easyapps.richeditorlib.windows.ColorBar
 import com.google.android.material.button.MaterialButton
 
@@ -23,7 +23,12 @@ class StyleForegroundColor(private val item: MaterialButton, private val editTex
         }
     }
 
-    override fun changeSpanInsideStyle(editable: Editable, start: Int, end: Int, e: SpanForegroundColor) {
+    override fun changeSpanInsideStyle(
+        editable: Editable,
+        start: Int,
+        end: Int,
+        e: SpanForegroundColor
+    ) {
         super.changeSpanInsideStyle(editable, start, end, e)
         if (e.foregroundColor != foreColor)
             applyNewStyle(editable, start, end, foreColor)
@@ -39,7 +44,7 @@ class StyleForegroundColor(private val item: MaterialButton, private val editTex
 
     override fun getStyleButton(): MaterialButton = item
 
-    override fun setChecked(isChecked: Boolean) { }
+    override fun setChecked(isChecked: Boolean) {}
 
     override fun getIsChecked(): Boolean = true
 
@@ -51,10 +56,8 @@ class StyleForegroundColor(private val item: MaterialButton, private val editTex
             colorBar?.dismiss()
         }
 
-        item.apply {
-            iconTint = ColorStateList.valueOf(foreColor)
-            isChecked = false
-        }
+        Helper.setTint(item.icon, color)
+        item.isChecked = false
 
         val start = editText.selectionStart
         val end = editText.selectionEnd

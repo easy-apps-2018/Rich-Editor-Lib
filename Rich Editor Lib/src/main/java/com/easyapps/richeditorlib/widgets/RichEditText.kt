@@ -11,7 +11,6 @@ import android.text.style.StrikethroughSpan
 import android.text.style.StyleSpan
 import android.text.util.Linkify
 import android.util.AttributeSet
-import android.util.Log
 import android.util.TypedValue
 import android.view.Gravity
 import android.view.inputmethod.EditorInfo
@@ -22,7 +21,6 @@ import com.easyapps.richeditorlib.interfaces.FontSizeListener
 import com.easyapps.richeditorlib.interfaces.ForegroundColorListener
 import com.easyapps.richeditorlib.interfaces.StyleListener
 import com.easyapps.richeditorlib.spans.SpanFontSize
-import com.easyapps.richeditorlib.spans.SpanForegroundColor
 import com.easyapps.richeditorlib.spans.SpanUnderline
 
 class RichEditText : AppCompatEditText {

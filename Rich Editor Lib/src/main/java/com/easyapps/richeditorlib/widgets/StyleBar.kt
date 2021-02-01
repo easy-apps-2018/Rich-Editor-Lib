@@ -1,12 +1,15 @@
 package com.easyapps.richeditorlib.widgets
 
 import android.content.Context
+import android.graphics.Color
+import android.graphics.drawable.LayerDrawable
 import android.util.AttributeSet
 import android.view.Gravity
 import android.view.View
 import android.widget.HorizontalScrollView
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
+import androidx.core.graphics.drawable.DrawableCompat
 import com.easyapps.richeditorlib.R
 import com.easyapps.richeditorlib.interfaces.StyleListener
 import com.easyapps.richeditorlib.styles.*
@@ -46,7 +49,7 @@ class StyleBar : HorizontalScrollView {
         underline = getItem(R.id.underline, R.drawable.ic_underline)
         strikethrough = getItem(R.id.strike_through, R.drawable.ic_strikethrough)
         size = getItem(R.id.size, R.drawable.ic_size)
-        fontColor = getItem(R.id.font_color, R.drawable.ic_font_color)
+        fontColor = getItem(R.id.font_color, R.drawable.ic_text_format)
     }
 
     fun setEditText(editText: RichEditText) {

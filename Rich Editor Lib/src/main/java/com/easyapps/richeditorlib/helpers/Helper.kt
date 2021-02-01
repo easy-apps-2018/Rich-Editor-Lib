@@ -4,6 +4,9 @@ import android.content.Context
 import android.content.res.ColorStateList
 import android.content.res.Resources
 import android.graphics.Color
+import android.graphics.drawable.Drawable
+import android.graphics.drawable.LayerDrawable
+import androidx.core.graphics.drawable.DrawableCompat
 import com.easyapps.richeditorlib.R
 import com.easyapps.richeditorlib.interfaces.StyleListener
 
@@ -25,9 +28,15 @@ object Helper {
             getStyleButton().apply {
                 this.isChecked = isChecked
                 iconTint?.let { color ->
-                    this.iconTint = ColorStateList.valueOf(color)
+                    setTint(icon, color)
                 }
             }
+        }
+    }
+
+    fun setTint(drawable: Drawable, color: Int) {
+        (drawable as? LayerDrawable)?.getDrawable(1)?.let {
+            DrawableCompat.setTint(it, color)
         }
     }
 
