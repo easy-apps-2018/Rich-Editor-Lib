@@ -2,7 +2,7 @@
 # Rich Editor Lib
 This library is a representation of [Android Rich text Editor](https://github.com/chinalwb/Android-Rich-text-Editor) based on Android native classes. This build offers an optimized library reimplemented in `Kotlin` by using [Material Design Components](https://material.io/components?platform=android).
 
-![rich_editor](https://user-images.githubusercontent.com/77691290/106393487-a74f5c00-63f7-11eb-8927-bbf42d802994.jpeg)
+![lib](https://user-images.githubusercontent.com/77691290/106530874-6fc2db80-64ed-11eb-9e7e-bcc5470cc3e1.jpg)
 
 ## Features
 Currently, it does not include all features introduced in the [original](https://github.com/chinalwb/Android-Rich-text-Editor) library. But nevertheless, they will be added release by release. Currently available features in [![](https://jitpack.io/v/easy-apps-2018/rich-editor-lib.svg)](https://jitpack.io/#easy-apps-2018/rich-editor-lib):
@@ -25,7 +25,7 @@ allprojects {
 ```
 Then add this dependency in your apps `build.gradle`:
 ```groovy
-implementation 'com.github.easy-apps-2018:rich-editor-lib:0.1.0'
+implementation 'com.github.easy-apps-2018:rich-editor-lib:0.1.1'
 ```
 ## Usage
 In `XML`: `activity_main.xml`
