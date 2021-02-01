@@ -87,7 +87,7 @@ For rendering you can use the `RichTextView` class:
 Add it in your `XML`: 
 ```xml
 <com.easyapps.richeditorlib.widgets.RichTextView
-	android:id="@+id/richTextView"  
+    android:id="@+id/richTextView"  
     android:layout_width="match_parent"  
     android:layout_height="match_parent"  
     android:layout_margin="16dp"  
