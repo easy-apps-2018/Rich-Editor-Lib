@@ -1,9 +1,9 @@
 package com.easyapps.richeditorlib.styles
 
-import com.easyapps.richeditorlib.widgets.RichEditText
 import com.easyapps.richeditorlib.abstracts.Style
 import com.easyapps.richeditorlib.helpers.Helper
 import com.easyapps.richeditorlib.spans.SpanUnderline
+import com.easyapps.richeditorlib.widgets.RichEditText
 import com.google.android.material.button.MaterialButton
 
 class StyleUnderline(private val item: MaterialButton, editText: RichEditText) : Style<SpanUnderline>() {

@@ -1,9 +1,9 @@
 package com.easyapps.richeditorlib.styles
 
 import android.text.style.StrikethroughSpan
-import com.easyapps.richeditorlib.widgets.RichEditText
 import com.easyapps.richeditorlib.abstracts.Style
 import com.easyapps.richeditorlib.helpers.Helper
+import com.easyapps.richeditorlib.widgets.RichEditText
 import com.google.android.material.button.MaterialButton
 
 class StyleStrikethrough(private val item: MaterialButton, editText: RichEditText) : Style<StrikethroughSpan>() {

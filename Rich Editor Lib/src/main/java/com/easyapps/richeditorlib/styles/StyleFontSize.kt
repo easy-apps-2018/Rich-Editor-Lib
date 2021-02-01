@@ -1,10 +1,10 @@
 package com.easyapps.richeditorlib.styles
 
 import android.text.Editable
-import com.easyapps.richeditorlib.widgets.RichEditText
 import com.easyapps.richeditorlib.abstracts.DynamicStyle
 import com.easyapps.richeditorlib.interfaces.FontSizeListener
 import com.easyapps.richeditorlib.spans.SpanFontSize
+import com.easyapps.richeditorlib.widgets.RichEditText
 import com.easyapps.richeditorlib.windows.SizeSlider
 import com.google.android.material.button.MaterialButton
 

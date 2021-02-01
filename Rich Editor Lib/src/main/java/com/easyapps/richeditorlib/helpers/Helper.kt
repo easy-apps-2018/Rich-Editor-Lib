@@ -1,7 +1,6 @@
 package com.easyapps.richeditorlib.helpers
 
 import android.content.Context
-import android.content.res.ColorStateList
 import android.content.res.Resources
 import android.graphics.Color
 import android.graphics.drawable.Drawable
