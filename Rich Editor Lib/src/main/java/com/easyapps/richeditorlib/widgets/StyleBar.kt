@@ -9,6 +9,7 @@ import android.widget.HorizontalScrollView
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
 import androidx.core.view.marginRight
+import androidx.core.view.setPadding
 import com.easyapps.richeditorlib.R
 import com.easyapps.richeditorlib.interfaces.StyleListener
 import com.easyapps.richeditorlib.styles.*

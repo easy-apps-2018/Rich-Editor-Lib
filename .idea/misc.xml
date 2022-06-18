@@ -6,6 +6,7 @@
         <entry key="../../../../layout/custom_preview.xml" value="0.31354166666666666" />
         <entry key="Rich Editor Lib/src/main/res/drawable/ic_bold.xml" value="0.193" />
         <entry key="Rich Editor Lib/src/main/res/layout/item_button.xml" value="0.2869791666666667" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2869791666666667" />
       </map>
     </option>
   </component>
@@ -14,5 +15,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2869791666666667" />
+      </ProjectState>
+    </option>
   </component>
 </project>
