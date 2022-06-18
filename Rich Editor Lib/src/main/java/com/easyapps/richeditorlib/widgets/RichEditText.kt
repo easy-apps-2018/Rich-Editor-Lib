@@ -15,6 +15,8 @@ import android.util.TypedValue
 import android.view.Gravity
 import android.view.inputmethod.EditorInfo
 import androidx.appcompat.widget.AppCompatEditText
+import androidx.core.content.ContextCompat
+import com.easyapps.richeditorlib.R
 import com.easyapps.richeditorlib.helpers.Helper
 import com.easyapps.richeditorlib.inner.Html
 import com.easyapps.richeditorlib.interfaces.FontSizeListener
@@ -42,7 +44,10 @@ class RichEditText : AppCompatEditText {
     private var italic = false
     private var underline = false
     private var strikethrough = false
-    private var foreColor = Color.BLACK
+
+    var foreColor: Int = Color.BLACK
+    var hint: String = ""
+    var fontSize: Float = 18f
 
     private var styleBar: StyleBar? = null
     var fontSizeListener: FontSizeListener? = null
@@ -56,8 +61,10 @@ class RichEditText : AppCompatEditText {
         autoLinkMask = Linkify.ALL
         inputType = (EditorInfo.TYPE_CLASS_TEXT or EditorInfo.TYPE_TEXT_FLAG_MULTI_LINE
                 or EditorInfo.TYPE_TEXT_FLAG_NO_SUGGESTIONS)
-        setTextSize(TypedValue.COMPLEX_UNIT_SP, 18f)
+        setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize)
         setTextColor(foreColor)
+        setHint(hint)
+        setBackgroundColor(ContextCompat.getColor(context, android.R.color.transparent))
         addTextChangedListener(textWatcher())
     }
 
@@ -115,9 +122,9 @@ class RichEditText : AppCompatEditText {
             itemCheckStatus(styles[0], bold)
             itemCheckStatus(styles[1], italic)
             itemCheckStatus(styles[2], underline)
-            itemCheckStatus(styles[3], strikethrough)
+            //itemCheckStatus(styles[3], strikethrough)
             // Font size at styles[4]
-            itemCheckStatus(styles[5], false, foreColor)
+            itemCheckStatus(styles[3], false, foreColor)
         }
         //foreColor = Color.BLACK
     }

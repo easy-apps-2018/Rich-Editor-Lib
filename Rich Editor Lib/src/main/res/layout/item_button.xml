@@ -8,7 +8,7 @@
     android:checkable="true"
     android:insetLeft="0dp"
     android:insetTop="0dp"
-    app:iconTint="@android:color/black"
+    app:iconTint="#5ae4a7"
     android:insetRight="0dp"
     android:insetBottom="0dp"
     app:backgroundTint="@color/item_background"

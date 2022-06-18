@@ -26,7 +26,7 @@ class ColorBar(
         setOnDismissListener {
             item.isChecked = false
         }
-        showAsDropDown(item, 0, -300)
+        showAsDropDown(item, 0, -250)
     }
 
     inner class ColorAdapter(private val colors: ArrayList<Int?>) :
